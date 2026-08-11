@@ -15,6 +15,35 @@ const checkoutNote = document.querySelector("[data-checkout-note]");
 const ageCheck = document.querySelector("[data-age]");
 const shipping = document.querySelector("[data-shipping]");
 
+document.documentElement.classList.add("js-enabled");
+window.addEventListener("load", () => {
+  document.body.classList.add("page-loaded");
+});
+
+const revealTargets = document.querySelectorAll(
+  ".quick-info article, .split-copy, .photo-stack, .section-heading, .shop-toolbar, .shop-product, .cart-panel, .story > div, .story-grid img, .visit-band > div, .contact > *"
+);
+
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -10% 0px", threshold: 0.12 }
+  );
+
+  revealTargets.forEach((target) => {
+    target.classList.add("reveal-on-scroll");
+    revealObserver.observe(target);
+  });
+} else {
+  revealTargets.forEach((target) => target.classList.add("is-visible"));
+}
+
 function renderCart() {
   const items = Array.from(cart.values());
   const totalQty = items.reduce((sum, item) => sum + item.qty, 0);
