@@ -357,7 +357,8 @@ h3 {
 }
 
 .showcase {
-  padding: clamp(72px, 10vw, 130px) clamp(18px, 6vw, 84px);
+  scroll-margin-top: 86px;
+  padding: clamp(54px, 7vw, 90px) clamp(18px, 6vw, 84px) clamp(72px, 9vw, 118px);
   background: var(--moss);
   color: var(--paper);
 }
@@ -374,6 +375,23 @@ h3 {
   color: rgba(255, 250, 241, 0.72);
 }
 
+.showcase .section-heading {
+  display: block;
+  max-width: 920px;
+  margin-bottom: 28px;
+}
+
+.showcase .section-heading h2 {
+  max-width: 760px;
+  font-size: clamp(42px, 5.4vw, 82px);
+}
+
+.showcase .section-heading p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 18px 0 0;
+  font-size: 18px;
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -383,7 +401,7 @@ h3 {
 .shop-shell {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 380px);
-  gap: 22px;
+  gap: 26px;
   align-items: start;
 }
 
@@ -391,7 +409,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 .filter,
@@ -422,7 +440,7 @@ h3 {
 }
 
 .product {
-  min-height: 470px;
+  min-height: 440px;
   display: grid;
   grid-template-rows: 1fr auto;
   padding: 24px;
@@ -437,7 +455,7 @@ h3 {
 }
 
 .product img {
-  height: 300px;
+  height: 270px;
   margin: 0 auto 18px;
   object-fit: contain;
   filter: drop-shadow(0 20px 22px rgba(0, 0, 0, 0.22));
@@ -471,7 +489,7 @@ h3 {
 
 .cart-panel {
   position: sticky;
-  top: 104px;
+  top: 112px;
   padding: 22px;
   border: 1px solid rgba(255, 250, 241, 0.16);
   border-radius: 8px;

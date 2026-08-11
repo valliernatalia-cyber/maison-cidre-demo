@@ -18,6 +18,12 @@ const shipping = document.querySelector("[data-shipping]");
 document.documentElement.classList.add("js-enabled");
 window.addEventListener("load", () => {
   document.body.classList.add("page-loaded");
+  revealTargets.forEach((target) => {
+    const rect = target.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.95 && rect.bottom > 0) {
+      target.classList.add("is-visible");
+    }
+  });
 });
 
 const revealTargets = document.querySelectorAll(
