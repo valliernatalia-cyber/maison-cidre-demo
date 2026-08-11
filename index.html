@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Maison du Cidre | Démo de refonte</title>
+    <meta name="description" content="Démo de refonte pour La Maison du Cidre : musée, producteur, boutique et bar-terrasse au Hézo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="La Maison du Cidre accueil">
+        <img src="assets/logo.png" alt="La Maison du Cidre">
+      </a>
+      <nav>
+        <a href="#visite">Visite</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#terroir">Savoir-faire</a>
+        <a href="#infos">Infos</a>
+      </nav>
+      <a class="header-action" href="#boutique">Commander</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/hero.jpg" alt="">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Producteur cidricole • Musée • Boutique</p>
+          <h1>La Maison du Cidre Saint-Armel</h1>
+          <p class="lead">Découvrez un lieu vivant au coeur du Golfe du Morbihan : fabrication artisanale, parcours musée, dégustation et produits bretons à emporter ou à commander.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#visite">Préparer ma visite</a>
+            <a class="button secondary" href="#boutique">Voir la boutique</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Informations rapides">
+          <span class="card-kicker">Aujourd'hui</span>
+          <strong>Ouvert 9h30 - 17h</strong>
+          <p>Visite du musée avec dégustation. Enfants gratuits accompagnés.</p>
+          <a href="tel:+33297264740">02 97 26 47 40</a>
+        </aside>
+      </section>
+
+      <section class="quick-info" aria-label="Points forts">
+        <article>
+          <span>01</span>
+          <h2>Visite authentique</h2>
+          <p>Film, verger conservatoire, broyeurs, pressoirs, alambics et dégustation.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>Cidres récompensés</h2>
+          <p>Brut, doux, fruité, extra brut et cuvées prestige issues du savoir-faire familial.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>Bar terrasse</h2>
+          <p>Un moment convivial autour d'un verre, de crêpes, de galettes et de produits locaux.</p>
+        </article>
+      </section>
+
+      <section class="split" id="visite">
+        <div class="split-copy">
+          <p class="eyebrow">Le musée</p>
+          <h2>Une visite simple à comprendre, facile à réserver</h2>
+          <p>Le parcours commence par un film de vingt minutes, puis continue en autonomie dans les bâtiments et le verger. La dégustation clôture l'expérience avec quatre cidres ou trois jus de pomme.</p>
+          <div class="price-row">
+            <div>
+              <strong>5 euros</strong>
+              <span>par adulte</span>
+            </div>
+            <div>
+              <strong>Gratuit</strong>
+              <span>moins de 18 ans</span>
+            </div>
+          </div>
+          <a class="button primary" href="#contact">Demander une disponibilité</a>
+        </div>
+        <div class="photo-stack">
+          <img class="photo-main" src="assets/visit.jpg" alt="Animation au Musée du Cidre">
+          <img class="photo-small" src="assets/verger.jpg" alt="Ramassage des pommes au verger">
+        </div>
+      </section>
+
+      <section class="showcase" id="boutique">
+        <div class="section-heading">
+          <p class="eyebrow">Boutique en ligne</p>
+          <h2>Une boutique pensée pour vendre</h2>
+          <p>Catalogue filtrable, conditionnements visibles, panier instantané et demande de commande : le parcours devient simple, rassurant et mesurable.</p>
+        </div>
+        <div class="shop-shell" data-shop>
+          <div class="shop-main">
+            <div class="shop-toolbar" aria-label="Catégories de produits">
+              <button class="filter active" type="button" data-filter="all">Tout</button>
+              <button class="filter" type="button" data-filter="cidres">Cidres</button>
+              <button class="filter" type="button" data-filter="prestige">Prestige</button>
+              <button class="filter" type="button" data-filter="jus">Jus</button>
+              <button class="filter" type="button" data-filter="bieres">Bières</button>
+            </div>
+            <div class="products shop-products">
+              <article class="product shop-product" data-category="cidres">
+                <img src="assets/cidre-brut.png" alt="Cidre Brut Saint-Armel">
+                <div>
+                  <span>Cidres</span>
+                  <h3>Cidre Brut</h3>
+                  <p>Carton de 6 bouteilles. Ferme, sec, parfait avec des galettes ou des fromages.</p>
+                  <strong>21,00 euros</strong>
+                  <button class="add-to-cart" type="button" data-id="cidre-brut" data-name="Cidre Brut" data-price="21" data-pack="Carton de 6">Ajouter</button>
+                </div>
+              </article>
+              <article class="product shop-product" data-category="cidres">
+                <img src="assets/cidre-doux.png" alt="Cidre Doux Saint-Armel">
+                <div>
+                  <span>Cidres</span>
+                  <h3>Cidre Doux</h3>
+                  <p>Carton de 6 bouteilles. Rond, fruit clair, idéal pour l'apéritif.</p>
+                  <strong>21,00 euros</strong>
+                  <button class="add-to-cart" type="button" data-id="cidre-doux" data-name="Cidre Doux" data-price="21" data-pack="Carton de 6">Ajouter</button>
+                </div>
+              </article>
+              <article class="product shop-product featured" data-category="prestige">
+                <img src="assets/cidre-royal.png" alt="Royal Guillevic Saint-Armel">
+                <div>
+                  <span>Prestige</span>
+                  <h3>Royal Guillevic</h3>
+                  <p>Cuvée raffinée, aromatique et élégante, idéale pour offrir ou célébrer.</p>
+                  <strong>31,80 euros</strong>
+                  <button class="add-to-cart" type="button" data-id="royal-guillevic" data-name="Royal Guillevic" data-price="31.8" data-pack="Carton de 6">Ajouter</button>
+                </div>
+              </article>
+              <article class="product shop-product" data-category="prestige">
+                <img src="assets/rose.png" alt="Rose de Pomme Saint-Armel">
+                <div>
+                  <span>Prestige</span>
+                  <h3>Rose de Pomme</h3>
+                  <p>Carton de 6 bouteilles. Notes délicates, présentation premium.</p>
+                  <strong>31,80 euros</strong>
+                  <button class="add-to-cart" type="button" data-id="rose-pomme" data-name="Rose de Pomme" data-price="31.8" data-pack="Carton de 6">Ajouter</button>
+                </div>
+              </article>
+              <article class="product shop-product" data-category="jus">
+                <img src="assets/jus.png" alt="Jus de pomme Saint-Armel">
+                <div>
+                  <span>Sans alcool</span>
+                  <h3>Jus de Pomme</h3>
+                  <p>Carton de 6 bouteilles. Naturel, familial, accessible à tous.</p>
+                  <strong>18,00 euros</strong>
+                  <button class="add-to-cart" type="button" data-id="jus-pomme" data-name="Jus de Pomme" data-price="18" data-pack="Carton de 6">Ajouter</button>
+                </div>
+              </article>
+              <article class="product shop-product" data-category="bieres">
+                <img src="assets/biere-blonde.png" alt="Bière Venete's Blonde">
+                <div>
+                  <span>Bières</span>
+                  <h3>Venete's Blonde</h3>
+                  <p>Carton de 12 bouteilles. Bière artisanale locale, fraîche et conviviale.</p>
+                  <strong>33,60 euros</strong>
+                  <button class="add-to-cart" type="button" data-id="venetes-blonde" data-name="Venete's Blonde" data-price="33.6" data-pack="Carton de 12">Ajouter</button>
+                </div>
+              </article>
+            </div>
+          </div>
+          <aside class="cart-panel" aria-label="Panier">
+            <div class="cart-head">
+              <div>
+                <span class="card-kicker">Panier</span>
+                <strong><span data-cart-count>0</span> <span data-cart-label>article</span></strong>
+              </div>
+              <span data-cart-total>0,00 euros</span>
+            </div>
+              <div class="cart-empty" data-cart-empty>Ajoutez des produits pour composer votre commande.</div>
+            <div class="cart-items" data-cart-items></div>
+            <div class="order-box">
+              <label>
+                Livraison
+                <select data-shipping>
+                  <option value="pickup">Retrait en boutique au Hézo</option>
+                  <option value="delivery">Livraison en France métropolitaine</option>
+                </select>
+              </label>
+              <label class="age-check">
+                <input type="checkbox" data-age>
+                Je confirme avoir plus de 18 ans pour les produits alcoolisés.
+              </label>
+              <button class="button primary checkout-button" type="button" data-checkout>Envoyer une demande</button>
+              <p class="checkout-note" data-checkout-note>Minimum de commande et frais de livraison confirmés par l'équipe.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="story" id="terroir">
+        <div>
+          <p class="eyebrow">Savoir-faire</p>
+          <h2>De la pomme au cidre, une histoire familiale</h2>
+          <p>Troisième et quatrième générations perpétuent une production attentive : pommes sélectionnées, triage, broyage, pressage, fermentation lente et mise en bouteille.</p>
+        </div>
+        <div class="story-grid">
+          <img src="assets/process.jpg" alt="Broyage des pommes pour le cidre breton">
+          <img src="assets/boutique.jpg" alt="Boutique de La Maison du Cidre au Hézo">
+          <img src="assets/terrasse.jpg" alt="Bar-terrasse du Musée du Cidre">
+        </div>
+      </section>
+
+      <section class="visit-band" id="infos">
+        <div>
+          <p class="eyebrow">Le Hézo • Golfe du Morbihan</p>
+          <h2>Une destination facile à intégrer dans une journée en Bretagne</h2>
+        </div>
+        <div class="info-list">
+          <p><strong>Adresse</strong> Rue de Lann Vrihan, 56450 Le Hézo</p>
+          <p><strong>Musée</strong> lundi au samedi, 9h30 - 17h</p>
+          <p><strong>Boutique</strong> ouverte toute l'année</p>
+          <p><strong>Accès</strong> parking gratuit, accès PMR, ligne 24 depuis Vannes</p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow">Contact</p>
+        <h2>Préparer une visite, une commande ou un groupe</h2>
+        <form>
+          <label>
+            Nom
+            <input type="text" placeholder="Votre nom">
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="vous@email.fr">
+          </label>
+          <label>
+            Message
+            <textarea placeholder="Date souhaitée, nombre de personnes, question..."></textarea>
+          </label>
+          <button class="button primary" type="button">Envoyer la demande</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/logo.png" alt="La Maison du Cidre">
+      <p>L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</p>
+      <p>Démo non officielle de refonte réalisée à partir des contenus publics du site existant.</p>
+    </footer>
+    <script src="shop.js"></script>
+  </body>
+</html>
