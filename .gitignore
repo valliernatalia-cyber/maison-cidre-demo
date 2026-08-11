@@ -3,3 +3,4 @@ Thumbs.db
 node_modules/
 .netlify/
 git-askpass.ps1
+git-askpass.bat
